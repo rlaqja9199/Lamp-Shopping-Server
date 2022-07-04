@@ -14,12 +14,16 @@ module.exports = function(sequelize, DataTypes){
             allowNull: false
         },
         imageUrl: {
-            type: DataTypes.STRING(500)
+            type: DataTypes.STRING(500),
         },
         seller: {
             type: DataTypes.STRING(200),
             allowNull: false
         },
-    })
+        description: {
+            type: DataTypes.STRING(500),
+            allowNull: false
+        }
+    });
     return product
 }
